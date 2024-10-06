@@ -1,0 +1,32 @@
+2024-10-06T17:09:54.765Z  INFO 27846 --- [ionShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2024-10-06T17:09:54.767Z  INFO 27846 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-10-06T17:09:54.774Z  INFO 27846 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   WeatherApplicationTests.shouldGetById:119 » Servlet Request processing failed:...
+[INFO] 
+[ERROR] Tests run: 4, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.914 s
+[INFO] Finished at: 2024-10-06T17:09:55Z
+
+
+Error message = null
+      Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
+ Content type = null
+         Body = 
+Forwarded URL = null
+Redirected URL = null
+      Cookies = []
+[ERROR] Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.946 s <<< FAILURE! - in com.hackerrank.weather.WeatherApplicationTests
+[ERROR] shouldGetById  Time elapsed: 0.974 s  <<< ERROR!
+jakarta.servlet.ServletException: Request processing failed: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor]
+    at com.hackerrank.weather.WeatherApplicationTests.shouldGetById(WeatherApplicationTests.java:119)
+Caused by: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor]
+    at com.hackerrank.weather.WeatherApplicationTests.shouldGetById(WeatherApplicationTests.java:119)
+Caused by: com.fast
